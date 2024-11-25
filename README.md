@@ -27,7 +27,7 @@
 
 1. 克隆代码仓库：
    ```bash
-   git clone https://github.com/your-username/yaochi.git
+   git clone https://github.com/Eumenides1/yaochi-java.git
    cd yaochi
    ```
 
