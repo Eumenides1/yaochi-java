@@ -20,6 +20,10 @@ public class MultiBulkReply implements Reply {
 
     @Override
     public byte[] toBytes() {
+        // 检查 args 是否为 null
+        if (args == null) {
+            return "*0\r\n".getBytes(StandardCharsets.UTF_8);
+        }
         StringBuilder builder = new StringBuilder();
         builder.append("*").append(args.size()).append(RespConstants.CRLF);
         for (byte[] arg : args) {
