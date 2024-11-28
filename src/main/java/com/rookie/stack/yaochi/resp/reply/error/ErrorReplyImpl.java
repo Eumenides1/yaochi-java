@@ -1,4 +1,4 @@
-package com.rookie.stack.yaochi.resp.reply;
+package com.rookie.stack.yaochi.resp.reply.error;
 
 /**
  * @author eumenides

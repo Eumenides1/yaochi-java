@@ -1,4 +1,6 @@
-package com.rookie.stack.yaochi.resp.reply;
+package com.rookie.stack.yaochi.resp.reply.error;
+
+import com.rookie.stack.yaochi.resp.reply.Reply;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -9,7 +11,7 @@ import java.util.Map;
  * @description ErrorReply 接口，继承自 Reply，扩展了获取错误消息的方法
  * @date 2024/11/27
  */
-public interface ErrorReply extends Reply{
+public interface ErrorReply extends Reply {
     String error();
     // 工厂类，用于管理和生成常见的错误回复
     class Factory {
